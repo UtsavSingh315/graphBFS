@@ -126,7 +126,7 @@ const EasyConnectExample = () => {
         }
       }
     }
-
+    alert("No path found!");
     return null;
   };
 
