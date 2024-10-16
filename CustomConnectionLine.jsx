@@ -1,5 +1,5 @@
-import React from 'react';
-import { getStraightPath } from '@xyflow/react';
+import React from "react";
+import { getStraightPath } from "@xyflow/react";
 
 function CustomConnectionLine({ fromX, fromY, toX, toY, connectionLineStyle }) {
   const [edgePath] = getStraightPath({
@@ -15,9 +15,9 @@ function CustomConnectionLine({ fromX, fromY, toX, toY, connectionLineStyle }) {
       <circle
         cx={toX}
         cy={toY}
-        fill="black"
+        fill="purple"
         r={3}
-        stroke="black"
+        stroke="purple"
         strokeWidth={1.5}
       />
     </g>

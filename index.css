@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   margin: 0;
@@ -11,12 +15,14 @@ body {
 }
 
 .customNodeBody {
-  width: 150px;
-  height: 80px;
-  border: 3px solid black;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #3f084f;
+  color: #fff;
   position: relative;
+  /* background: #3f084f; */
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,20 +30,20 @@ body {
 }
 
 .customNode:before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -10px;
+  top: 100%;
   left: 50%;
   height: 20px;
-  width: 40px;
-  transform: translate(-50%, 0);
-  background: #d6d5e6;
+  width: 20px;
+  transform: translate(-50%, -70%) rotate(45deg);
+  background: #4e1460;
   z-index: 1000;
   line-height: 1;
-  border-radius: 4px;
+  border-radius: 100%;
   color: #fff;
   font-size: 9px;
-  border: 2px solid #222138;
+  /* border: 2px solid #222138; */
 }
 
 div.customHandle {
@@ -51,4 +57,47 @@ div.customHandle {
   transform: none;
   border: none;
   opacity: 0;
+}
+
+.aButton {
+  font-size: 32px;
+  padding: 2px;
+  background: #d590f5;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.floating-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.aButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #be60da;
+  color: white;
+  cursor: pointer;
+}
+
+.aButton:hover {
+  background-color: #4e1460;
 }
